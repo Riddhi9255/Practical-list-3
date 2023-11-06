@@ -1,0 +1,39 @@
+#include <iostream>
+#include <string>
+using namespace std;
+class Student {
+public:
+    // Data members
+    :string name;
+    int age;
+
+    // Member function to get student details
+    void get_details() {
+         cout << "Enter student's name: ";
+        cin >> name;
+        cout << "Enter student's age: ";
+        cin >> age;
+    }
+
+    // Member function to display student details
+    void display_details() {
+        cout<<"mahemdavadi riddhi j"<< endl;
+        cout<<"220130318035"<<endl;
+        
+        cout << "Student's Name: " << name << std::endl;
+        cout << "Student's Age: " << age << std::endl;
+    }
+};
+
+int main() {
+    // Create a Student object
+    Student student;
+
+    // Call the get_details() function to input student details
+    student.get_details();
+
+    // Call the display_details() function to display student details
+    student.display_details();
+
+    return 0;
+}
