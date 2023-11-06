@@ -1,0 +1,45 @@
+Write a C++ program to demonstrate use of class employee. 
+(*Variable declares in private section & method declaration in public 
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class Employee {
+private:
+    string emp_name;
+    int emp_code;
+    double emp_salary;
+    string emp_branch;
+
+public:
+    // Member function to set employee details
+    void setDetails(const string& name, int code, double salary, const string& branch) {
+        emp_name = name;
+        emp_code = code;
+        emp_salary = salary;
+        emp_branch = branch;
+    }
+
+    // Member function to display employee details
+    void displayDetails() {
+        cout << "Employee Name: " << emp_name << endl;
+        cout << "Employee Code: " << emp_code << endl;
+        cout << "Employee Salary: " << emp_salary << endl;
+        cout << "Employee Branch: " << emp_branch << endl;
+        cout << " mahemdavadi riddhi j, 220130318035" <<endl;
+    }
+};
+
+int main() {
+    // Create an Employee object
+    Employee emp1;
+
+    // Set employee details using the setDetails() method
+    emp1.setDetails("John Doe", 1001, 50000.0, "HR");
+
+    // Display employee details using the displayDetails() method
+    emp1.displayDetails();
+
+    return 0;
+}
