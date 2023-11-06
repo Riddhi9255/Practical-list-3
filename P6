@@ -1,0 +1,35 @@
+Write a C++ program to create class Shape with public data 
+member’s height & base. Member function are display_shape(). Call 
+member function using object of the class. (* scope resolution 
+operator method define outside the class).
+
+
+#include <iostream>
+using namespace std ;
+class Shape {
+public:
+    int height;
+    int base;
+    void display_shape();
+};
+
+// Define the member function outside the class using the scope resolution operator
+void Shape::display_shape() {
+    cout<<"mahemdavadi riddhi j , 220130318035 "<<endl;
+    cout << "Height: " << height <<endl;
+    cout << "Base: " << base << endl;
+}
+
+int main() {
+    // Create a Shape object
+    Shape myShape;
+
+    // Set the values for height and base
+    myShape.height = 5;
+    myShape.base = 8;
+
+    // Call the display_shape() function using the object
+    myShape.display_shape();
+
+    return 0;
+}
