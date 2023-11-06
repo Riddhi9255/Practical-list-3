@@ -1,0 +1,33 @@
+Write a C++ program to demonstrate use of class account member is 
+acc_no, balance, branch_code. (*Declare variable in public section 
+and initialize the value with object name and display outside the 
+class)
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class Account {
+public:
+    int acc_no;
+    double balance;
+    string branch_code;
+
+    // Constructor to initialize member variables
+    Account(int acc, double bal, const string& branch) : acc_no(acc), balance(bal), branch_code(branch) {
+    }
+};
+
+int main() {
+    // Create an Account object and initialize member variables
+    Account myAccount(1001, 50000.0, "BR123");
+
+    // Display the values of member variables outside the class
+     cout<< " mahemdavadi riddhi j ,220130318035 " << endl;
+    cout << "Account Number: " << myAccount.acc_no << endl;
+    cout << "Balance: " << myAccount.balance << endl;
+    cout << "Branch Code: " << myAccount.branch_code << endl;
+
+    return 0;
+}
+
